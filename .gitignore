@@ -1,0 +1,8 @@
+/Backup
+/Installed Packages
+/Pristine Packages
+/Settings
+
+*.pyc
+*.cache
+*.sublime-project
