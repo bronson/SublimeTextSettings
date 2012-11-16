@@ -6,10 +6,12 @@
 		"Package Control",
 		"Pretty JSON",
 		"RubyTest",
+		"sublimelint",
 		"TrailingSpaces"
 	],
 	"repositories":
 	[
-		"https://github.com/dzhibas/SublimePrettyJson.git"
+		"https://github.com/dzhibas/SublimePrettyJson.git",
+		"https://github.com/lunixbochs/sublimelint.git"
 	]
 }
