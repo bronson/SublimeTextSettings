@@ -3,6 +3,7 @@
 	"installed_packages":
 	[
 		"Git",
+		"Markdown Preview",
 		"Package Control",
 		"Pretty JSON",
 		"RubyTest",
