@@ -7,6 +7,4 @@
 *.cache
 *.sublime-project
 .DS_Store
-
-# seems like this should go in /Settings
-Packages/User/RubyTest.last-run
+*.last-run
