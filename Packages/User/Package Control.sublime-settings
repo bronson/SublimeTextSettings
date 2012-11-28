@@ -6,12 +6,14 @@
 		"Package Control",
 		"Pretty JSON",
 		"RubyTest",
+		"sublime-navigation-history",
 		"SublimeLint",
 		"TrailingSpaces"
 	],
 	"repositories":
 	[
 		"https://github.com/dzhibas/SublimePrettyJson.git",
-		"https://github.com/bronson/SublimeLint.git"
+		"https://github.com/bronson/SublimeLint.git",
+		"https://github.com/rf-/sublime-navigation-history"
 	]
 }

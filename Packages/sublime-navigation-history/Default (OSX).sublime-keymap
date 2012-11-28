@@ -1,0 +1,4 @@
+ [
+  { "keys": ["ctrl+o"], "command": "navigation_history_back"},
+  { "keys": ["ctrl+i"], "command": "navigation_history_forward"}
+  ]
