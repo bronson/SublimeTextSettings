@@ -79,7 +79,7 @@ class OpenInclude(sublime_plugin.TextCommand):
 			if path.strip() == '':
 				continue
 
-			extensions = ["", ".coffee", ".hbs", ".jade", ".js", ".scss", ".sass", ".styl", ".less"];
+			extensions = ["", ".coffee", ".hbs", ".jade", ".js", ".scss", ".sass", ".styl", ".less", ".py", ".rb"];
 			for extension in extensions:
 				# remove quotes
 				path = re.sub('^"|\'', '',  re.sub('"|\'$', '', path.strip()))
