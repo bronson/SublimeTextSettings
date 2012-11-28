@@ -1,4 +1,7 @@
-[  // https://github.com/maltize/sublime-text-2-ruby-tests/issues/91
+[
+  { "keys": ["super+backquote"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
+  // https://github.com/maltize/sublime-text-2-ruby-tests/issues/91
   { "keys": ["super+shift+t"], "command": "reopen_last_file" },
   { "keys": ["super+shift+ctrl+r"], "command": "run_all_ruby_test" }
 ]
