@@ -1,5 +1,9 @@
 [
   // https://github.com/maltize/sublime-text-2-ruby-tests/issues/91
   { "keys": ["super+shift+t"], "command": "reopen_last_file" },
-  { "keys": ["super+shift+ctrl+r"], "command": "run_all_ruby_test" }
+  { "keys": ["super+shift+ctrl+r"], "command": "run_all_ruby_test" },
+
+  // shortcut to reveal file in side bar so no need to use context menu
+  // (like textmate's cmd+shift+r but that's taken by RubyTest)
+  { "keys": ["super+k", "super+f"], "command": "reveal_in_side_bar"}
 ]
