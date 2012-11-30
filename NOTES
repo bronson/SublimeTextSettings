@@ -28,6 +28,17 @@ How are settings found?
   User Settings      -- User/Preferences.sublime-settings
 
 
+OK, starting to understand why my TrailingSpaces settings aren't taking effect.
+  https://github.com/SublimeText/TrailingSpaces/issues/12
+Plugins can read settings two ways: read from User/Preferences.sublime-settings
+the way Vintage does, or read from User/PACKAGE.sublime-settings
+the way TrailingSpaces does.  It's totally up to the plugin.
+  Vintage: view.settings(...)
+  TrailingSpaces: sublime.load_settings('trailing_spaces.sublime-settings')
+This is unfortunate.  I wish all plugins would read settings from the
+view so that they're less restricted with where settings can come from.
+
+
 Packages/Default/*.sublime-keymap  (then platform)
 PKG/*.sublime-keymap   (then platform)
 Packages/User/*.sublime-keymap (then platform)
