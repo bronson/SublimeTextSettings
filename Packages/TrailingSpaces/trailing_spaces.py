@@ -28,6 +28,7 @@ DEFAULT_IS_ENABLED = True
 ts_settings = sublime.load_settings('trailing_spaces.sublime-settings')
 trailing_spaces_enabled = bool(ts_settings.get('trailing_spaces_enabled',
                                                DEFAULT_IS_ENABLED))
+trailingWhitespaces = set()
 
 # Determine if the view is a find results view
 def is_find_results(view):
@@ -39,18 +40,34 @@ def find_trailing_spaces(view):
                                                DEFAULT_IS_ENABLED))
     return view.find_all('[ \t]+$' if include_empty_lines else '(?<=\S)[\t ]+$')
 
+def update_region(view):
+    global trailingWhitespaces
+    linesWithSelection = set()
+    for s in view.sel():
+        if s.a != s.b:
+            continue
+        linesWithSelection.add(view.full_line(sublime.Region(s.a)))
+    regionsToIgnore = set()
+    for r in trailingWhitespaces:
+        for l in linesWithSelection:
+            if l.intersects(r):
+                regionsToIgnore.add(r)
+
+    regions = list(trailingWhitespaces - regionsToIgnore)
+    color_scope_name = ts_settings.get('trailing_spaces_highlight_color',
+                                       DEFAULT_COLOR_SCOPE_NAME)
+    view.add_regions('TrailingSpacesHighlightListener',
+                     regions, color_scope_name,
+                     sublime.DRAW_EMPTY)
 
 # Highlight trailing spaces
 def highlight_trailing_spaces(view):
+    global trailingWhitespaces
     max_size = ts_settings.get('trailing_spaces_file_max_size',
                                DEFAULT_MAX_FILE_SIZE)
-    color_scope_name = ts_settings.get('trailing_spaces_highlight_color',
-                                       DEFAULT_COLOR_SCOPE_NAME)
     if view.size() <= max_size and not is_find_results(view):
-        regions = find_trailing_spaces(view)
-        view.add_regions('TrailingSpacesHighlightListener',
-                         regions, color_scope_name,
-                         sublime.DRAW_EMPTY)
+        trailingWhitespaces = set(find_trailing_spaces(view))
+        update_region(view)
 
 
 # Clear all trailing spaces
@@ -75,6 +92,10 @@ class ToggleTrailingSpacesCommand(sublime_plugin.WindowCommand):
 
 # Highlight matching regions.
 class TrailingSpacesHighlightListener(sublime_plugin.EventListener):
+    def on_selection_modified(self, view):
+        if trailing_spaces_enabled:
+            update_region(view)
+
     def on_modified(self, view):
         if trailing_spaces_enabled:
             highlight_trailing_spaces(view)
