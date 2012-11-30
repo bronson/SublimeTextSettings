@@ -4,6 +4,10 @@
         "command": "save"
     },
     {
+        "caption": ":wa - Save All",
+        "command": "save_all"
+    },
+    {
         "caption": ":e - Revert",
         "command": "revert"
     },
