@@ -17,3 +17,18 @@ To print the current syntax file:
 And the syntax scope / theme selector:
   view.syntax_name(view.sel()[0].begin())
   sublime.set_clipboard(view.syntax_name(view.sel()[0].a))
+  OR just hit Control-Shift-P
+
+
+How are settings found?
+
+  Global Settings
+  Package Settings   -- Vintage/Preferences.sublime-settings
+  Platform Settings  -- Vintage/Preferences (OSX).sublime-settings
+  User Settings      -- User/Preferences.sublime-settings
+
+
+Packages/Default/*.sublime-keymap  (then platform)
+PKG/*.sublime-keymap   (then platform)
+Packages/User/*.sublime-keymap (then platform)
+

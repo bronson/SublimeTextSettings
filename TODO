@@ -1,0 +1,10 @@
+Is sublime-last-edit any good?  Change-List is interesting but only
+stays in the same file: http://www.sublimetext.com/forum/viewtopic.php?f=5&t=10044
+
+
+TODO:
+
+- Add BracketHighlighter?  https://github.com/facelessuser/BracketHighlighter/tree/BH2
+- Make sure every plugin adds itself to the Preferences menu and
+  can be configured the same way.
+- Undo Tree / Gundo is definitely sorely missing
