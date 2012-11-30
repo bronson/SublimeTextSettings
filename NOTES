@@ -1,0 +1,19 @@
+Plugins automatically reload on save.  You can edit your plugin's
+code right in sublime and try out your changes immediately.  It's
+an amazingly satisfying environment.
+
+
+At a bare minimum, all programming environments need logging output.
+Sublime outputs python print statements to the python console.
+  print "Selection: " + repr(view.sel())
+
+
+Open a console and paste this in to have every command printed:
+  sublime.log_commands(True)
+
+
+To print the current syntax file:
+  view.settings().get('syntax')
+And the syntax scope / theme selector:
+  view.syntax_name(view.sel()[0].begin())
+  sublime.set_clipboard(view.syntax_name(view.sel()[0].a))
