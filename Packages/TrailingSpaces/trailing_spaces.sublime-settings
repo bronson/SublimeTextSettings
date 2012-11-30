@@ -9,8 +9,5 @@
 	"trailing_spaces_enabled"             : true,
 
 	// By default empty lines are cleared
-	"trailing_spaces_include_empty_lines" : true,
-
-	// Do not highlight trailing spaces, if they are next to cursor
-    "ignore_on_cursor" : true
+	"trailing_spaces_include_empty_lines" : true
 }
