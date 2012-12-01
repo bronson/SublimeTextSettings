@@ -265,7 +265,7 @@
     },
     {
         "class": "tree_row",
-        "layer0.texture": "Theme - Default/row_highlight_blue.png",
+        "layer0.texture": "Theme - Default/row_highlight_dark.png",
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [1, 1]
     },
