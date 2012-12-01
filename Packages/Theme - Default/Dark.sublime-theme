@@ -327,8 +327,8 @@
     },
     {
         "class": "sidebar_label",
-        "color": [187, 187, 187], 
-        "shadow_color": [0, 0, 0], 
+        "color": [242, 242, 242],
+        "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 1]
     },
     {
