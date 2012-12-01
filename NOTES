@@ -43,3 +43,16 @@ Packages/Default/*.sublime-keymap  (then platform)
 PKG/*.sublime-keymap   (then platform)
 Packages/User/*.sublime-keymap (then platform)
 
+
+
+==== Colors and Appearance
+
+The difference between a theme and a color scheme is very strange at first.
+Color scheme only affects file highlighting.  Theme affects the rest of the
+window: icons, sidebar, tabs, etc.  You can switch a color scheme at any
+time but you must restart sublime after switching a theme.
+
+Color schemes that claim to be themes (https://github.com/chriskempson/tomorrow-theme)
+don't help things.
+
+Not real enthused with Soda Dark... the filenames in the sidebar are hardly readable.

@@ -4,9 +4,19 @@ stays in the same file: http://www.sublimetext.com/forum/viewtopic.php?f=5&t=100
 
 TODO:
 
+- I'll probably want this: https://github.com/alienhard/SublimeAllAutocomplete
 - Add BracketHighlighter?  https://github.com/facelessuser/BracketHighlighter/tree/BH2
 - Make sure every plugin adds itself to the Preferences menu and
   can be configured the same way.
 - Extract Rails Partial. This is kind of similar: https://github.com/wesf90/rails-partial
 - Undo Tree / Gundo is definitely sorely missing
+- Control-A and Control-X (increase/decrease # under cursor) would be awesome in Vintage.
 
+- would be nice if sublime sidebar supported typeahead find.
+
+
+NOTDO:
+
+- FindKeyConflicts is great in theory but it produces hundreds of false positives.  Not useful untiil this is fixed.
+  Better would probably be a KeyReport plugin that would list keys sorted by keystroke or by command and let user interpret context/conflicts.
+- Tomorrow Theme (actually color scheme): hate the additional submenu, themes aren't very different from defaults

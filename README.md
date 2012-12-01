@@ -43,3 +43,17 @@ since it tracks settings local to this computer (recent files, window
 layouts, etc), `Installed Packages` doesn't seem to be used,
 and `Pristine Packages` doesn't seem to be worth versioning (?).
 
+## Living with Sublime
+
+#### Don't memeorize keyboard shortcuts
+
+That's a big time sink, locks you in, and exposes you to oddball
+platform and package author choices.  Instead, learn the
+bare minimum to navigate and edit quickly, then use the Command Palette
+(command-shift-P) for everything else.  For example, don't learn whatever
+random press the Markdown Preview package uses, just hit "Cmd-Shift-P
+md".  Markdown Preview will be the top command, then you just hit return.
+
+If you do something all the time (like switching between tabs), the
+quickest way to find the keyboard shortcut is to go Preferences ->
+
