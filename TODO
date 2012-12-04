@@ -4,12 +4,17 @@ stays in the same file: http://www.sublimetext.com/forum/viewtopic.php?f=5&t=100
 
 TODO:
 
+- Visual block mode is key.  Fuuuuuuu, how does Vintage not include this?
+- Why are U and Control-R so buggy?  Don't they map directly to undo and redo?  (perhaps with count?)
+- Vintage textobjects: line , _ Ruby-block space
 - I'll probably want this: https://github.com/alienhard/SublimeAllAutocomplete
 - Add BracketHighlighter?  https://github.com/facelessuser/BracketHighlighter/tree/BH2
 - Make sure every plugin adds itself to the Preferences menu and
   can be configured the same way.
 - Extract Rails Partial. This is kind of similar: https://github.com/wesf90/rails-partial
 - Undo Tree / Gundo is definitely sorely missing
+- Any way of porting endwise so ruby end statements are reliably inserted?  (don't see much sense in using snippets here but whatev)
+  - matchit would be nice too.  % bouncing between begin/if/rescue/end/etc would be hot.
 - Control-A and Control-X (increase/decrease # under cursor) would be awesome in Vintage.
 
 - Alignment, there are some silly bugs in this package.
@@ -24,6 +29,8 @@ TODO:
 
 
 - would be nice if sublime sidebar supported typeahead find.
+- how about a snippet discovery tool?  when it sees you something that could have been snippeted, it tells you
+  meh, that sounds irritating.  what about just highlighting potential snippets in the current file?
 
 
 NOTDO:
