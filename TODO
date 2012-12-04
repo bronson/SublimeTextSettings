@@ -12,6 +12,17 @@ TODO:
 - Undo Tree / Gundo is definitely sorely missing
 - Control-A and Control-X (increase/decrease # under cursor) would be awesome in Vintage.
 
+- Alignment, there are some silly bugs in this package.
+  - want two keystrokes: auto align, and declare what to align by
+    - declare would prompt for the separators to use.
+  - needs to have unit tests with examples.
+  https://github.com/khiltd/Abacus
+  https://github.com/wbond/sublime_alignment
+  https://github.com/aventurella/sublimetext-align-assignments
+  https://github.com/mishu91/Sublime-Text-2-Table-Cleaner
+  http://www.codealignment.com/ForSublimeText.html
+
+
 - would be nice if sublime sidebar supported typeahead find.
 
 

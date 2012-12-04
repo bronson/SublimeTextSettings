@@ -9,7 +9,7 @@ def expanded_selection(view, line, left, right):
 	pat = re.compile('^[A-Za-z0-9_.-]+$')
 	while left > line.begin() and re.match(pat, view.substr(left-1)): left -= 1
 	while right < line.end() and re.match(pat, view.substr(right)): right += 1
-	return view.substr(sublime.Region(left,right))
+	return view.substr(sublime.Region(left, right))
 
 def selection_words(view):
 	words = []
