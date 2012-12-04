@@ -1,6 +1,7 @@
 {
 	"installed_packages":
 	[
+		"Abacus",
 		"Alignment",
 		"Git",
 		"LESS",
