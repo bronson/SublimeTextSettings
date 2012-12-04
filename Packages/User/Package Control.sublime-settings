@@ -1,6 +1,7 @@
 {
 	"installed_packages":
 	[
+		"Alignment",
 		"Git",
 		"Markdown Preview",
 		"Package Control",
