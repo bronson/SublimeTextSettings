@@ -22,10 +22,23 @@ And the syntax scope / theme selector:
 
 How are settings found?
 
+  AT EACH STEP ignore packages listed in ignored_packages
   Global Settings
   Package Settings   -- Vintage/Preferences.sublime-settings
   Platform Settings  -- Vintage/Preferences (OSX).sublime-settings
   User Settings      -- User/Preferences.sublime-settings
+
+
+To restore Sublime to stock to see if an extension or user config
+is screwing with functionality:   http://www.sublimetext.com/docs/2/revert.html
+  quit Sublime
+  mv '~/Library/Application Support/Sublime Text 2' '~/Library/Application Support/DISABLED'
+  run Sublime
+When you're done, to put everything back the way it was:
+  quit Sublime
+  rm -rf '~/Library/Application Support/Sublime Text 2'
+  mv '~/Library/Application Support/DISABLED' '~/Library/Application Support/Sublime Text 2'
+  run Sublime
 
 
 OK, starting to understand why my TrailingSpaces settings aren't taking effect.
@@ -56,3 +69,6 @@ Color schemes that claim to be themes (https://github.com/chriskempson/tomorrow-
 don't help things.
 
 Not real enthused with Soda Dark... the filenames in the sidebar are hardly readable.
+
+
+To see what version of python you're using: import sys; print sys.version
