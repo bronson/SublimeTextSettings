@@ -7,6 +7,7 @@ TODO:
 - Visual block mode is key.  Fuuuuuuu, how does Vintage not include this?
 - Why are U and Control-R so buggy?  Don't they map directly to undo and redo?  (perhaps with count?)
 - Vintage textobjects: line , _ Ruby-block space   & sentence? http://www.sublimetext.com/forum/viewtopic.php?f=2&t=8049&sid=ccbc7430ce88a972c1857cf595830bc0
+- Indent guides look sweet for haml: https://github.com/ajpalkovic/SublimePlugins/blob/master/indent_guides.py
 - Not real enthused with current dark theme (find box still light, tabs still low contrast), maybe try https://github.com/netatoo/phoenix-theme
 - I'll probably want this: https://github.com/alienhard/SublimeAllAutocomplete
 - Add BracketHighlighter?  https://github.com/facelessuser/BracketHighlighter/tree/BH2

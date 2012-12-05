@@ -1,0 +1,6 @@
+[
+	{
+		"caption": "Display Color Scheme Rule",
+		"command": "print_theme_rule"
+	}
+]
