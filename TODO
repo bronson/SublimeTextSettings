@@ -22,6 +22,8 @@ TODO:
 - Any way of porting endwise so ruby end statements are reliably inserted?  (don't see much sense in using snippets here but whatev)
   - matchit would be nice too.  % bouncing between begin/if/rescue/end/etc would be hot.
 - Control-A and Control-X (increase/decrease # under cursor) would be awesome in Vintage.
+- Need to be able to pipe buffer contents to shell and back.  VintageEx?  https://github.com/SublimeText/VintageEx/blob/master/ex_commands.py
+
 
 - Alignment, there are some silly bugs in this package.
   - want two keystrokes: auto align, and declare what to align by

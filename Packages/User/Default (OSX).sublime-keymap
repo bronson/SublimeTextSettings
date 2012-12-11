@@ -3,6 +3,10 @@
   { "keys": ["super+shift+t"], "command": "reopen_last_file" },
   { "keys": ["super+shift+ctrl+r"], "command": "run_all_ruby_test" },
 
+  // Reindent really deserves a shortcut but most tab shortcuts are taken
+  // (only other one is option+ctrl+tab, this seems better)
+  { "keys": ["super+ctrl+tab"], "command": "reindent"},
+
   // shortcut to reveal file in side bar so no need to use context menu
   // (like textmate's cmd+shift+r but that's taken by RubyTest)
   { "keys": ["super+k", "super+f"], "command": "reveal_in_side_bar"}
