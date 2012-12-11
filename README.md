@@ -32,9 +32,30 @@ makes it easier to access your settings directory.
 
 ## Usage
 
-Use Package Control as usual.  After making changes, commit the results.
-On your other machines, just `(cd ~/.sublimetext; git pull)` to bring them
-in sync.  Easy!
+Use Package Control as usual to add and remove packages.  After making
+changes, commit the results.  On your other machines, just
+`(cd ~/.sublimetext; git pull)` to bring them in sync.  Easy!
+
+
+## Key Bindings
+
+All stock with Vintage mode enabled.  Here are Notable bindings
+from installed plugins:
+
+#### Testing
+
+- Command-Shift-R: run single ruby test under cursor
+- Command-Control-Shift-R: run all Ruby tests in current file
+- Command-Shift-E: run last ruby test   (is this useful?)
+- Command-Shift-X: show test panel (would be nice if this toggled the test panel)
+- Command-Period: switch between code and test (add ctrl to open in new split)
+
+No need for verify keybinding -- SublimeLint does that.
+
+#### Misc
+
+- Command-K Command-F: reeveal current file in sidebar (like Cmd-K Cmd-B toggles sidebar)
+
 
 ## Notes/Guesses
 

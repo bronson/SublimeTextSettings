@@ -4,9 +4,13 @@ stays in the same file: http://www.sublimetext.com/forum/viewtopic.php?f=5&t=100
 
 TODO:
 
+- Need a shortcut for reindent?
+- Make RubyTest automatically use rvm or rbenv if available. https://github.com/maltize/sublime-text-2-ruby-tests/issues/36#issuecomment-11264205
+- Make trailing spaces not apply to the test results panel -- ugly!
 - Visual block mode is key.  Fuuuuuuu, how does Vintage not include this?
 - Why are U and Control-R so buggy?  Don't they map directly to undo and redo?  (perhaps with count?)
-- Vintage textobjects: line , _ Ruby-block space   & sentence? http://www.sublimetext.com/forum/viewtopic.php?f=2&t=8049&sid=ccbc7430ce88a972c1857cf595830bc0
+- Vintage textobjects: <>, tag, line , _ Ruby-block space   & sentence? http://www.sublimetext.com/forum/viewtopic.php?f=2&t=8049&sid=ccbc7430ce88a972c1857cf595830bc0
+- Ruby Test should make sure to run noninteractively...  leaving a 'debugger' in the source hangs things up but good.
 - Indent guides look sweet for haml: https://github.com/ajpalkovic/SublimePlugins/blob/master/indent_guides.py
 - Not real enthused with current dark theme (find box still light, tabs still low contrast), maybe try https://github.com/netatoo/phoenix-theme
 - I'll probably want this: https://github.com/alienhard/SublimeAllAutocomplete
