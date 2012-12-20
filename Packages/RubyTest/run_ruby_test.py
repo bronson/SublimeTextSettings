@@ -74,7 +74,7 @@ class TestMethodMatcher(object):
       if match_obj:
         return match_obj.group(1)[::-1]
 
-      match_obj = re.search('\s?[\"\']([a-zA-Z_\"\'\s\d-\.#=]+)[\"\']\s+tset', test_file_content) # 2nd search for 'test "name"'
+      match_obj = re.search('\s?[\"\']([a-zA-Z_\"\'\s\d\-\.#=]+)[\"\']\s+tset', test_file_content) # 2nd search for 'test "name"'
       if match_obj:
         test_name = match_obj.group(1)[::-1]
         return "test_%s" % test_name.replace("\"", "\\\"").replace(" ", "_").replace("'", "\\'")
@@ -137,13 +137,13 @@ class BaseRubyTask(sublime_plugin.TextCommand):
   def run_shell_command(self, command, working_dir):
     if not command:
       return False
-    if COMMAND_PREFIX:
-      command = COMMAND_PREFIX + ' ' + command
     if BEFORE_CALLBACK:
       os.system(BEFORE_CALLBACK)
     if AFTER_CALLBACK:
       command += " ; " + AFTER_CALLBACK
     self.save_test_run(command, working_dir)
+    if COMMAND_PREFIX:
+      command = COMMAND_PREFIX + ' ' + command
     self.view.window().run_command("exec", {
       "cmd": [command],
       "shell": True,
