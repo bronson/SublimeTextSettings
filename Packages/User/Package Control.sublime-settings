@@ -9,6 +9,7 @@
 		"Package Control",
 		"Pretty JSON",
 		"Rails Partial",
+		"RubyTest",
 		"sublime-navigation-history",
 		"SublimeLint",
 		"TrailingSpaces"
@@ -17,6 +18,7 @@
 	[
 		"https://github.com/dzhibas/SublimePrettyJson.git",
 		"https://github.com/bronson/SublimeLint.git",
-		"https://github.com/rf-/sublime-navigation-history"
+		"https://github.com/rf-/sublime-navigation-history",
+		"https://github.com/bronson/sublime-text-2-ruby-tests.git"
 	]
 }
