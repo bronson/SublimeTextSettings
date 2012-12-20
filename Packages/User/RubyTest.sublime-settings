@@ -1,3 +1,5 @@
 {
-  "save_on_run": true
+  "save_on_run": true,
+  "check_for_rbenv": true,
+  "check_for_rvm": true
 }
