@@ -4,6 +4,5 @@
 	"ignored_packages":
 	[
 	],
-	"theme": "Dark.sublime-theme",
-	"vintage_use_clipboard": true
+	"theme": "Dark.sublime-theme"
 }

@@ -17,7 +17,9 @@ TODO:
 - Add BracketHighlighter?  https://github.com/facelessuser/BracketHighlighter/tree/BH2
 - Make sure every plugin adds itself to the Preferences menu and
   can be configured the same way.
-- Extract Rails Partial. This is kind of similar: https://github.com/wesf90/rails-partial
+- Partial: previous partial path/name should be inserted as a suggestion for the next one
+- Partial: Code inserted isn't indented properly (should take same indent as code being replaced)
+- Partial: triple-click then Create Partial results in the next line being glued onto partial command
 - Undo Tree / Gundo is definitely sorely missing
 - Any way of porting endwise so ruby end statements are reliably inserted?  (don't see much sense in using snippets here but whatev)
   - matchit would be nice too.  % bouncing between begin/if/rescue/end/etc would be hot.
