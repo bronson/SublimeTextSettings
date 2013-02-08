@@ -9,5 +9,9 @@
 
   // shortcut to reveal file in side bar so no need to use context menu
   // (like textmate's cmd+shift+r but that's taken by RubyTest)
-  { "keys": ["super+k", "super+f"], "command": "reveal_in_side_bar"}
+  { "keys": ["super+k", "super+f"], "command": "reveal_in_side_bar"},
+
+  // reformatting the pasted text should be the default
+  { "keys": ["super+shift+v"], "command": "paste" },
+  { "keys": ["super+v"], "command": "paste_and_indent" }
 ]

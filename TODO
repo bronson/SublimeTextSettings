@@ -49,3 +49,8 @@ NOTDO:
   Better would probably be a KeyReport plugin that would list keys sorted by keystroke or by command and let user interpret context/conflicts.
 - Tomorrow Theme (actually color scheme): hate the additional submenu, themes aren't very different from defaults
 - The nginx conf file syntax highlighting is awful.  Not useful but definitely buggy.
+
+
+DONE:
+
+- Command-V is paste-with-indent, Command-Shift-V is paste without fixing indent (swapped the bindings)
