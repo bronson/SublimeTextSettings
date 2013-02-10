@@ -4,7 +4,9 @@ stays in the same file: http://www.sublimetext.com/forum/viewtopic.php?f=5&t=100
 
 TODO:
 
-- Need a shortcut for reindent?
+- Return should NEVER complete ANYTHING.  Tab should.
+- Commands and menus to fold and unfold comments
+- Need a shortcut for reindent.  Cmd-Something-Tab?
 - Make RubyTest automatically use rvm or rbenv if available. https://github.com/maltize/sublime-text-2-ruby-tests/issues/36#issuecomment-11264205
 - Make trailing spaces not apply to the test results panel -- ugly!
 - Visual block mode is key.  Fuuuuuuu, how does Vintage not include this?
@@ -12,11 +14,11 @@ TODO:
 - Vintage textobjects: <>, tag, line , _ Ruby-block space   & sentence? http://www.sublimetext.com/forum/viewtopic.php?f=2&t=8049&sid=ccbc7430ce88a972c1857cf595830bc0
 - Ruby Test should make sure to run noninteractively...  leaving a 'debugger' in the source hangs things up but good.
 - Indent guides look sweet for haml: https://github.com/ajpalkovic/SublimePlugins/blob/master/indent_guides.py
+- Make Markdown Preview use HTML::Pipeline?  Rename it to Browser Preview and have it autodetect fileytpe?
 - Not real enthused with current dark theme (find box still light, tabs still low contrast), maybe try https://github.com/netatoo/phoenix-theme
 - I'll probably want this: https://github.com/alienhard/SublimeAllAutocomplete
 - Add BracketHighlighter?  https://github.com/facelessuser/BracketHighlighter/tree/BH2
-- Make sure every plugin adds itself to the Preferences menu and
-  can be configured the same way.
+- Make sure every plugin adds itself to the Preferences menu and can be configured the same way.
 - Partial: previous partial path/name should be inserted as a suggestion for the next one
 - Partial: Code inserted isn't indented properly (should take same indent as code being replaced)
 - Partial: triple-click then Create Partial results in the next line being glued onto partial command
@@ -36,7 +38,7 @@ TODO:
   https://github.com/aventurella/sublimetext-align-assignments
   https://github.com/mishu91/Sublime-Text-2-Table-Cleaner
   http://www.codealignment.com/ForSublimeText.html
-
+- vintage bug: "|mock(May7::Data).descriptions" cf. replaces current char, not everything including period.  ct. works great.
 
 - would be nice if sublime sidebar supported typeahead find.
 - how about a snippet discovery tool?  when it sees you something that could have been snippeted, it tells you
