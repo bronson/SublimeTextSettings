@@ -1,3 +1,8 @@
+# DELETED
+
+Now using ST3 here: https://github.com/bronson/Sublime-3-Settings
+
+
 # Sharing Sublime Text 2 Settings via Git
 
 This keeps [Sublime Text 2's](http://www.sublimetext.com/)
@@ -29,6 +34,7 @@ makes it easier to access your settings directory.
 
 (todo)
 
+~/.config/SublimeTextSettings on Linux or "~/Library/Application Support/Sublime Text 2" on Mac
 
 ## Usage
 
